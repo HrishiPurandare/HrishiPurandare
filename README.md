@@ -20,14 +20,14 @@ I've spent 7+ years building test automation for banking, payments and sports-te
 
 | Project | What it shows |
 |---|---|
-| [ai-quality-engineering-lab](https://github.com/HrishiPurandare/ai-quality-engineering-lab) | Testing a RAG banking chatbot on local LLMs (Ollama): 42-question golden-set evals (90% pass), LLM-as-a-judge calibration, 22-attack red team (9% attack success) |
+| [ai-quality-engineering-lab](https://github.com/HrishiPurandare/ai-quality-engineering-lab) | **v1.0.** Testing a RAG banking chatbot on local LLMs (Ollama): golden-set evals (90% pass), red team + guardrails (attack success 9% → 0%), Playwright E2E with semantic assertions, a CI quality gate on the real model, and drift detection |
 | [playwright-ts-sdet-framework](https://github.com/HrishiPurandare/playwright-ts-sdet-framework) | Playwright + TypeScript: POM, fixtures, UI + API + integration tests, CI |
 | [pytest-api-automation-framework](https://github.com/HrishiPurandare/pytest-api-automation-framework) | Python API testing: reusable client, schema validation, Dockerised mock server |
 | [devops-test-automation-lab](https://github.com/HrishiPurandare/devops-test-automation-lab) | Dockerised test suites with docker-compose and multi-job GitHub Actions |
 
 ### 🚧 Currently building
 
-- **AI Quality Engineering Lab:** evals and red team done; next up are Promptfoo red-teaming, guardrails and CI quality gates
+- **AI Quality Engineering Lab:** v1.0 done (evals, red team, guardrails, E2E, CI quality gate, drift); next: a stronger judge and multi-turn tests
 - **Ledgerly Bank:** a small full-stack banking app (Angular + Django + Node) that I use as the system under test for my automation projects
 
 ### 🔗 Find me
