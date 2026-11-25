@@ -20,16 +20,17 @@ I've spent 7+ years building test automation for banking, payments and sports-te
 
 | Project | What it shows |
 |---|---|
-| [ai-quality-engineering-lab](https://github.com/HrishiPurandare/ai-quality-engineering-lab) | **v1.0.** Testing a RAG banking chatbot on local LLMs (Ollama): golden-set evals (90% pass), red team + guardrails (attack success 9% → 0%), Playwright E2E with semantic assertions, a CI quality gate on the real model, and drift detection |
-| [ledgerly-bank](https://github.com/HrishiPurandare/ledgerly-bank) | A banking app built to be tested: Django REST API with JWT auth, owner-only access, transfers enforcing real limit rules (idempotency, row locking, concurrency tests on Postgres), ISO 20022 pacs.008 messages, and an Angular 21 front end |
-| [playwright-ts-sdet-framework](https://github.com/HrishiPurandare/playwright-ts-sdet-framework) | Playwright + TypeScript: POM, fixtures, UI + API + integration tests, CI |
+| [ai-quality-engineering-lab](https://github.com/HrishiPurandare/ai-quality-engineering-lab) | **v1.1.** Testing **NovaAsk**, NovaBank's RAG chatbot, on local LLMs (Ollama): golden-set evals (90% pass), red team + guardrails (attack success 14% → 5%), Playwright E2E with semantic assertions, a CI quality gate on the real model, and drift detection |
+| [novabank](https://github.com/HrishiPurandare/novabank) | **NovaBank v1.1**, a fictional bank built to be tested: Django REST API with JWT auth, owner-only access, transfers enforcing real limit rules (idempotency, row locking, concurrency tests on Postgres), ISO 20022 pacs.008 messages, an Angular 21 front end, and Docker Compose |
+| [playwright-ts-sdet-framework](https://github.com/HrishiPurandare/playwright-ts-sdet-framework) | Playwright + TypeScript UI suite for NovaBank: personas with saved logins, page objects, API-seeded data, emailed one-time codes, a lost-reply idempotency test; Chromium + Firefox in CI |
 | [pytest-api-automation-framework](https://github.com/HrishiPurandare/pytest-api-automation-framework) | Python API testing: reusable client, schema validation, Dockerised mock server |
 | [devops-test-automation-lab](https://github.com/HrishiPurandare/devops-test-automation-lab) | Dockerised test suites with docker-compose and multi-job GitHub Actions |
 
 ### 🚧 Currently building
 
-- **AI Quality Engineering Lab:** v1.0 done (evals, red team, guardrails, E2E, CI quality gate, drift); next: a stronger judge and multi-turn tests
-- **Ledgerly Bank:** API and login done (auth, accounts, transfers, pacs.008); next: dashboard and transfer screens, then Docker Compose. It becomes the system under test for my Playwright, API and Cypress projects
+- **AI Quality Engineering Lab (NovaAsk):** v1.1 done (evals, red team, guardrails, E2E, CI quality gate, drift); next: a stronger judge and multi-turn tests
+- **NovaBank:** v1.1 done (API, Angular app, Docker Compose). It's the system under test for my Playwright, API and Cypress projects
+- **Playwright TS framework:** now tests NovaBank end to end; next: accessibility checks, visual regression, lint and sharding
 
 ### 🔗 Find me
 
